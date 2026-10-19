@@ -5,12 +5,12 @@ Supported firmware: 7.00 through 13.60.
 - Run `python serve.py` locally, and visit the provided URL on the PS5.
 - The default payloads are stored in `payloads/` after a successful run, the ELF loader listens on port `9021`.
 - After elfldr starts on port `9021`, you can press R2 to send `kstuff.elf`, `shadowmountplus.elf`, `pldmgr.elf`, then `OnionHEN.elf`.
-- Alternatively, You can press L2 to send only `kstuff.elf`, `pldmgr.elf`, and `shadowmountplus.elf`. This method sends `OnionHE.elf` 1 instead of `OnionHEN.elf`
+- Alternatively, You can press L2 to send only `byepervisor_reborn.elf`.
 
 ## Modifications by Sailor Noheals
-A feature to press L2 has been added to allow the payloads to run without etaHEN being sent.
+A feature to press L2 has been added to allow the payloads to run without OnionHEN being sent.
 
-OnionHEN has been added as an alternative to etaHEN. 
+byepervisor_reborn has been added as an alternative to byepervisor_reborn
 
 The payload `byepervisor_reborn.elf` file has been added to the list of payloads sent in both the L2 and R2 methods to provide more automatic support for the byepervisor_reborn application on exploited PS5 systems. If byepervisor_reborn is crashing on launch, this may be the cause. Make sure that the helper payload is running.
 
